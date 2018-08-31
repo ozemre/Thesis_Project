@@ -1,0 +1,41 @@
+﻿Exporters	Imported value in 2004-M03	Imported value in 2004-M04	Imported value in 2004-M05	Imported value in 2004-M06	Imported value in 2004-M07	Imported value in 2004-M08	Imported value in 2004-M09	Imported value in 2004-M10	Imported value in 2004-M11	Imported value in 2004-M12	Imported value in 2005-M01	Imported value in 2005-M02	Imported value in 2005-M03	Imported value in 2005-M04	Imported value in 2005-M05	Imported value in 2005-M06	Imported value in 2005-M07	Imported value in 2005-M08	Imported value in 2005-M09	Imported value in 2005-M10	
+"Italy"	2231	2636	2103	2629	3055	1409	2536	2748	3664	1656	1624	2474	1932	1903	1958	1703	2266	1839	2071	2832	
+"Turkey"	1104	1723	582	663	1058	1091	791	1389	1748	699	1369	627	1112	670	651	1054	1571	1443	1514	1663	
+"Germany"	1421	1709	1205	1358	1320	1232	1983	1234	1285	1384	1229	1757	1291	1184	1433	1790	1996	978	1732	1480	
+"China"											250	97	431	1094	1465	703	764	887	665	1117	
+"Denmark"	1278	1054	800	1799	1091	1042	787	983	1194	685	682	543	681	1032	876	848	794	930	835	711	
+"Slovenia"	380	360	511	758	675	721	477	547	825	746	308	399	490	377	483	501	630	569	590	454	
+"Hungary"	359	335	263	420	515	454	469	385	608	567	369	539	695	207	581	472	575	533	309	268	
+"Sweden"	303	186	265	343	325	429	369	362	382	325	236	307	156	183	236	273	302	406	373	224	
+"France"	467	197	270	256	238	418	231	218	356	188	110	202	125	539	512	335	78	112	206	149	
+"Romania"	39	2	39	25	63	4	27	26	28	33	56	52	103	16	13	37	40	97	62	142	
+"Poland"	73	31	92	171	153	158	38	82	19	10	8		1	45	107		75	134	31	99	
+"Austria"											96	82	74	58	57	30	95	27	85	59	
+"Greece"	46	81	34	40	21	17	82	28	44	16	25	2	0	106	18		16		68	44	
+"Bulgaria"	7	22	24	4	6	8						15					1	14	11	30	
+"United States of America"											90	32		15	103	3	169	19	19	30	
+"Finland"	4	14	3	32	4	30	35	13		5	16	6	6	9	19	22	3	14	7	10	
+"Ireland"	0		6	16	2	4	8	572	14	8	1	4	4	18	1	9	13	15	2	3	
+"Ghana"	0	0	0	0	0	0			0		0	0		0		0	0	0	0	0	
+"Uganda"						0	0	0	0			0	0		0		0	0		0	
+"Zambia"				0			0														
+"Iceland"					0		0							0					0		
+"Australia"	0				0			0		0						0		0	0		
+"Cameroon"			0														0				
+"Brazil"				0																	
+"Colombia"													0								
+"Mayotte"		0																			
+"Czech Republic"																348					
+"Switzerland"				14			1														
+"South Africa"														0			0	0	0		
+"Spain"					0					3			1	14					1		
+"Côte d'Ivoire"				0											0						
+"Japan"				3																	
+"Kazakhstan"		0																0			
+"Lithuania"							4	1		14						11					
+"Malawi"						0															
+"Malaysia"															0						
+"Mauritius"															0			0			
+"Mexico"																0					
+"Morocco"	0															0					
+"Netherlands"	7	104	71	104	162	53	26	202	83	116	45	6	10	0	12	1	6	0			

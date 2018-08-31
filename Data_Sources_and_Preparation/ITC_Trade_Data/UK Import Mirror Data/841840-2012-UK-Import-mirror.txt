@@ -1,0 +1,38 @@
+﻿Exporters	Imported value in 2012-M02	Imported value in 2012-M03	Imported value in 2012-M04	Imported value in 2012-M05	Imported value in 2012-M06	Imported value in 2012-M07	Imported value in 2012-M08	Imported value in 2012-M09	Imported value in 2012-M10	Imported value in 2012-M11	Imported value in 2012-M12	Imported value in 2013-M01	Imported value in 2013-M02	Imported value in 2013-M03	Imported value in 2013-M04	Imported value in 2013-M05	Imported value in 2013-M06	Imported value in 2013-M07	Imported value in 2013-M08	Imported value in 2013-M09	
+"Turkey"	2445	2312	3031	3843	3112	3547	3931	4415	4775	4047	3635	4064	4272	2742	2367	2397	2397	3088	3157	4607	
+"China"	790	1025	1175	1678	1788	1773	1469	1525	1486	1245	1880	1473	1355	862	1499	1875	1474	1418	1358	1521	
+"Germany"	1067	1506	1054	946	1079	1156	1226	1201	2164	1420	876	1700	1336	1105	1366	960	1136	1552	1310	1412	
+"Hungary"	341	282	227	491	550	459	477	680	817	511	589	468	438	399	575	1001	652	658	806	852	
+"Italy"	345	498	337	276	452	413	159	282	396	350	432	341	320	282	370	451	413	622	189	326	
+"Denmark"	170	226	207	212	203	211	390	175	115	162	124	151	119	176	128	134	191	210	257	260	
+"Spain"	3	6	2	1	1		56	38	26	35	16	53	27	41	28	76	48	68	39	96	
+"Bulgaria"	15	39	115	114	73	59	69	65	62	41	38	44	25	44	38	14	26	63	31	72	
+"United States of America"	29	38	14		35		15	43	15	27	83	74	24	7	4	48	23	135	8	41	
+"Ireland"	54	45	23	23	69	21	33	54	21	160	34	21	30	52	33	89	26	63	46	31	
+"Serbia"										28					27		15	26		26	
+"Mexico"																			46	13	
+"Netherlands"	786	407	10	356	5	12	161	9	3	344	192	431	9	6	6	13		0	16	8	
+"Slovenia"	23	30	39	28	51	11	42	34	38	16	23	28	31	21	26	38	31	10	33	4	
+"Poland"																			2	1	
+"France"	7	17	13	4	7	1	7	10	4	4	1	9	2	11	5	0	1	14	5	1	
+"Portugal"			34																		
+"India"			1	0	0	32	13														
+"Nigeria"		0																			
+"Lithuania"										9											
+"Malaysia"														19							
+"South Africa"	0			0		0															
+"Sweden"	47	71	48	60	15	36			23	23							4	7			
+"Switzerland"									2												
+"Thailand"																0					
+"Israel"		0	0	0																	
+"Iceland"																		3			
+"Finland"				5		10	2		8			2	2		6						
+"Greece"	19	36	89	120	151	100	34	118	138	76	65	117	94	147	183	85	57	19			
+"Chile"			0																		
+"Colombia"			0																		
+"Czech Republic"							10					1									
+"Australia"		0			0	0		0													
+"Austria"	75	58	36	22	60	43	19	73	58	32	26	40	67	37	31	27	78	69	48		
+"Barbados"																	5				
+"Belgium"	4	4		2	1	1	1	10	0	5	2	1		2	5	1			0		
+"Brunei Darussalam"																			5		

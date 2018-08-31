@@ -1,0 +1,53 @@
+﻿Exporters	Imported value in 2007-M05	Imported value in 2007-M06	Imported value in 2007-M07	Imported value in 2007-M08	Imported value in 2007-M09	Imported value in 2007-M10	Imported value in 2007-M11	Imported value in 2007-M12	Imported value in 2008-M01	Imported value in 2008-M02	Imported value in 2008-M03	Imported value in 2008-M04	Imported value in 2008-M05	Imported value in 2008-M06	Imported value in 2008-M07	Imported value in 2008-M08	Imported value in 2008-M09	Imported value in 2008-M10	Imported value in 2008-M11	Imported value in 2008-M12	
+"Turkey"	2529	2032	1733	1426	1568	3427	3195	1743	1422	1544	1954	1606	3101	1935	3081	2251	2568	3741	3293	2712	
+"Germany"	1957	1885	1440	1114	1382	1573	1681	1097	1507	1634	1499	2461	1814	2567	2523	1402	1698	1745	784	1034	
+"Italy"	2132	2430	3722	1643	2334	2522	1848	821	2392	2575	2120	1826	2119	2135	2977	919	1370	1186	1055	739	
+"Hungary"	483	814	470	517	720	680	615	400	593	443	636	364	584	545	476	561	536	456	373	397	
+"China"	1528	953	2135	1640	1406	1702	1393	1497	995	707	465	1536	655	1262	1480	1073	877	1004	439	171	
+"Denmark"	640	645	532	551	563	599	579	410	257	160	174	196	169	248	181	300	174	151	203	114	
+"Netherlands"	304	430	446	181	189	249	198	184	162	353	317	181	352	239	1047	107	306	166	240	78	
+"Austria"	237	218	290	59	130	119	193	30	131	193	187	147	136	112	77	41	149	59	87	77	
+"Slovenia"	568	328	470	353	216	498	442	386	166	277	230	139	38	160	72	67	44	61	10	59	
+"Greece"	39	41	108	40	14	122	74	41	37	75	42	46	65	23	46	21	70	68	18	58	
+"France"	182	244	425	188	163	350	185	141	140	177	100	196	113	68	112	85	102	77	82	49	
+"Bulgaria"	24	22	22	14	23	12	24	63	45	54	7	39	58	30	32	17	2	5	2	29	
+"Poland"	23	138	161	131	32	153	69	197	208	45	104	107	99	75	237	30	9	11	45	23	
+"Sweden"	408	354	364	150	208	231	127	179	118	12	54	52	26	35	30	21	24	19		22	
+"Finland"	9	23		2	2	9	4	2	7	18			9	6	9		13		4	12	
+"United States of America"	27	14	68	56	12	40	25	21	58	67	21	20	76	7	54	55	22	57	7	6	
+"Ireland"	7	26	11	7	17	4	25	24	22	8	17	6	12	29	14	22	29	2	14	5	
+"Spain"		1				56	231	15	36			14	2	8	10	4	5		9	4	
+"Chile"											1									1	
+"Canada"						0									0	0			0	0	
+"Argentina"	0		0					0		0	0	0				0	0	0	0	0	
+"Mexico"		0															0			0	
+"Kenya"												0		0						0	
+"Thailand"					0	0														0	
+"Uganda"		0	0			0	0				0									0	
+"South Africa"				0	0			0			0		0							0	
+"India"	0	0	0		0	0	0	0	0	0	0		0		0		0	0	15	0	
+"Singapore"	0											0			0		0		0		
+"Portugal"	17			6			35		16	11		39	13	23	8	40	24	10	57		
+"Romania"	19	75	40			62	23	38	75			18		36	37	85		14			
+"Serbia"										28	29			30	20						
+"Seychelles"										0	0										
+"Egypt"													0								
+"Zambia"	0									0											
+"Korea, Republic of"									6		40		11								
+"Lithuania"					14							46		71	49	51	41	124	102		
+"Malaysia"	0					0															
+"Maldives"			0					0													
+"Mauritius"				0			0									0	0				
+"Côte d'Ivoire"		0															0				
+"Japan"											86										
+"Kazakhstan"													0								
+"Morocco"				0				0													
+"New Caledonia"												0				0		0			
+"Nicaragua"	0																				
+"Nigeria"		0	0		0									0							
+"Australia"	0					0				0			0		0	0	0	0	0		
+"Belgium"	2																				
+"Croatia"		14																			
+"Czech Republic"																			24		
+"Dominica"						0	0														
+"Iceland"			0							0											

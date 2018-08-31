@@ -1,0 +1,52 @@
+﻿Exporters	Imported value in 2010-M07	Imported value in 2010-M08	Imported value in 2010-M09	Imported value in 2010-M10	Imported value in 2010-M11	Imported value in 2010-M12	Imported value in 2011-M01	Imported value in 2011-M02	Imported value in 2011-M03	Imported value in 2011-M04	Imported value in 2011-M05	Imported value in 2011-M06	Imported value in 2011-M07	Imported value in 2011-M08	Imported value in 2011-M09	Imported value in 2011-M10	Imported value in 2011-M11	Imported value in 2011-M12	Imported value in 2012-M01	Imported value in 2012-M02	
+"Turkey"	4301	6466	3939	6680	6980	8866	3666	4200	4676	6860	6964	8309	7117	11812	11039	15952	16062	15322	10179	9516	
+"China"	8714	7438	12109	11300	13699	9113	5961	4020	5855	5534	6855	8636	7769	5226	6190	6966	6447	7746	7427	4169	
+"Korea, Republic of"	5199	3271	4399	9423	10004	5388	3645	4686	4514	3868	4292	3140	2360	3350	6064	8203	5503	3497	3923	3086	
+"Italy"	2676	1130	2263	2011	1991	1566	2112	2331	2990	2263	2730	2348	2095	1631	2890	2829	2465	1744	2271	2189	
+"Poland"	1383	1009	1386	1706	1810	2570	1415	2204	2546	2397	2586	3186	2196	2650	2738	2879	4500	2921	2472	1609	
+"Germany"	2099	1374	2416	2416	2429	1552	2447	2435	3201	2762	2845	2597	2726	2413	2799	3217	3398	2626	1802	1585	
+"United States of America"	193	526	275	326	348	258	244	452	469	366	574	295	145	285	386	290	416	375	415	613	
+"Hungary"	612	588	581	771	850	581	558	493	759	835	719	605	589	835	505	565	597	852		544	
+"Thailand"	141	310	213	456	393	156	467	358	271	145	540	683	406	396	75	226	103	652	445	277	
+"Romania"	533	741	598	408	771	1303	306	959	568	292	679	407	417	369	437	513	345	615	346	229	
+"Austria"	79	34	75	242	16	26	87	101	145	143	265	63	220	77	198	71	87	134	18	207	
+"Slovenia"	69	202	235	269	296	55	115	96	182	104	178	42	235	156	222	224	179	182	89	151	
+"Spain"		604	721	651	563	486	231	156	273	297	168	349	163	204	296	281	294	410	185	146	
+"Bulgaria"	401	99	388	408	443	116	257	152	122	268	172	318	291	125	258	267	229	235	262	121	
+"Ireland"	105	36	80	103	19	37	40	31	16	28	40	16	38	49	65	355	282	106	294	101	
+"France"	44	43	51	32	78	9	53	38	40	28	28	38	29	63	54	43	128	73	62	60	
+"India"		0	0	0	0				50		50		77	32	36	59		62	61	58	
+"Greece"	38	33	40	101	35	34	35	91	93	48	48	86	101	104	83	194	49	50	115	21	
+"Denmark"	4	14	10	10	17	40	37	15	12	10	8	18	8	13	10	9	17	4	15	17	
+"Czech Republic"	26	1		16	2	1	1	16	13	2		1	4	0	38	50	27	0	0	6	
+"Netherlands"	8	3			63		69	80	32	31	16	3	8	23	89	14	22	9	19	4	
+"Israel"	0	0	0	0	0	0	0	0	0	0	0	0		0	0	0	0	0	0	0	
+"Iceland"															0						
+"Kazakhstan"								0													
+"Jordan"		0				0						0						0			
+"Kenya"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0			
+"New Zealand"		4	2	9			2		2		6										
+"Niger"			0																		
+"Nigeria"										0		0				0			0		
+"Norway"								1					11	16							
+"Pakistan"									0		0										
+"Malaysia"					0																
+"Mexico"		104	34		76									25							
+"Morocco"			0	0	0	0															
+"Australia"								0	0	3					0			22			
+"Congo"				0																	
+"Cyprus"			13	53	27						13		94								
+"Burundi"														0							
+"Canada"														0							
+"Chile"						1															
+"Bahamas"																	0				
+"Belgium"				2		1						32			1		1		4		
+"Solomon Islands"																		0			
+"Singapore"				8					12												
+"Serbia"	34		85	66		34		39	29		71	58	30	41	58		96		54		
+"Sweden"				2																	
+"Switzerland"								7				14						48			
+"South Africa"	0												0								
+"Zambia"					0																
+"Uganda"	0												0		0						
+"Egypt"													0			0			0		
