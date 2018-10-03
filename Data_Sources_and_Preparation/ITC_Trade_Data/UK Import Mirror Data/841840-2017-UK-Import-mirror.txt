@@ -1,0 +1,34 @@
+﻿Exporters	Imported value in 2016-M12	Imported value in 2017-M01	Imported value in 2017-M02	Imported value in 2017-M03	Imported value in 2017-M04	Imported value in 2017-M05	Imported value in 2017-M06	Imported value in 2017-M07	Imported value in 2017-M08	Imported value in 2017-M09	Imported value in 2017-M10	Imported value in 2017-M11	Imported value in 2017-M12	Imported value in 2018-M01	Imported value in 2018-M02	Imported value in 2018-M03	Imported value in 2018-M04	Imported value in 2018-M05	Imported value in 2018-M06	Imported value in 2018-M07	
+"Turkey"	2155	2027	2036	1702	2134	1942	1948	2030	3826	2631	3328	2489	1831	2713	1967	1726	2689	2899	2391	2518	
+"United States of America"	120	141	202	121	221	180	144	77	135	163	134	219	348	141	365	291	292	222	421	285	
+"Austria"	21	50	32	56	43	45	16	11	13	24	51	33	19	57	61	139	46	67			
+"Belgium"	124	108	165	338	79	131	152	97	110	98	94	133	280	120	146	157	53	136			
+"Brazil"											15										
+"Bulgaria"	80	138	102	84	75	60	90	103	56	149	121	178	66	151	113	142	101	127			
+"China"	1762	1641	1216	1808	1575	1665	1709	1761	2152	2187	2077	1895	1813	1481	1307	1403					
+"Czech Republic"																		0			
+"Denmark"	96	67	210	106	50	155	108	54	96	109	202	109	33	189	78	117	119	66			
+"Finland"				4	7													8			
+"France"	34	0						29			1	2	6		2		1	1			
+"Germany"	972	1008	815	1176	924	185	2507	1170	1328	1446	1478	1355	808	1236	1044	1256	1203	1285	1271		
+"Greece"										2											
+"Hungary"	539	408	497	593	390	409	322	574	813	560	505	666	698	399	548	359	395	529			
+"Ireland"	42	28	34	28	10	24	18	24	31	36	53	37	20	169	138	117	24	18	14		
+"Israel"			2																		
+"Italy"	200	309	221	403	203	294	300	346	182	310	319	512	356	336	318	315	227	276			
+"Japan"				12																	
+"Korea, Republic of"											1	1									
+"Lithuania"			9					3			8										
+"Mexico"	45	77	85	156	5	31	181	158	103	162	184	21	29		83	271	120	149			
+"Netherlands"	317	205	200	511	396	427	537	339	221	301	74	791	475	305	204	227	537	503			
+"Norway"							0														
+"Poland"		3		7			4				2			23		134	47	146			
+"Portugal"	2					18						1		1							
+"Romania"	10					12	10	22		27	18	8	2	48				0			
+"Russian Federation"												4							3		
+"India"				35							14										
+"Slovenia"	7	14	8	12	4	19	11	10	11	17	7	13	3	12	10	19	8	25			
+"South Africa"											3										
+"Spain"	40	21	25	6	33	117	108	108	121	106	63	116	44	42	29	119	40	28	40		
+"Switzerland"									23										3		
+"Thailand"																35					

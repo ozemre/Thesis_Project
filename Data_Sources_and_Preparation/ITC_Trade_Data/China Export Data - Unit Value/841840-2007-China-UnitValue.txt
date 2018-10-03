@@ -1,0 +1,118 @@
+﻿Importers	2007-M02-Exported unit value, US Dollar/Units	2007-M03-Exported unit value, US Dollar/Units	2007-M04-Exported unit value, US Dollar/Units	2007-M05-Exported unit value, US Dollar/Units	2007-M06-Exported unit value, US Dollar/Units	2007-M07-Exported unit value, US Dollar/Units	2007-M08-Exported unit value, US Dollar/Units	2007-M09-Exported unit value, US Dollar/Units	2007-M10-Exported unit value, US Dollar/Units	2007-M11-Exported unit value, US Dollar/Units	2007-M12-Exported unit value, US Dollar/Units	2008-M01-Exported unit value, US Dollar/Units	2008-M02-Exported unit value, US Dollar/Units	2008-M03-Exported unit value, US Dollar/Units	2008-M04-Exported unit value, US Dollar/Units	2008-M05-Exported unit value, US Dollar/Units	2008-M06-Exported unit value, US Dollar/Units	2008-M07-Exported unit value, US Dollar/Units	2008-M08-Exported unit value, US Dollar/Units	2008-M09-Exported unit value, US Dollar/Units	Exported value in 2008-M09, US Dollar thousand	Exported quantity in 2008-M09, Units	
+"World"	156	125	130	117	128	120	153	147	157	156	158	163	149	181	150	148	145	150	153	149	6468	43271	
+"Japan"	126	141	147	127	126	128	160	151	148	153	151	145	146	166	164	147	151	141	153	165	1515	9193	
+"United Kingdom"	149	121	118	105	93	110	124	129	157	133	142	144	122	125	121	212	127	144	122	116	877	7554	
+"Nigeria"	155	192			68	119		156	216	181	123	183	188	132		250	132	132	135	127	494	3880	
+"Netherlands"	130	113	144	99	116	102	127	201	129	178	171	268	92	205	115	136	128	108	104	121	485	4006	
+"France"	147	89	155	132	90	69	222	75	164	220	88	102	423	318	219	158	104	85	133	125	353	2834	
+"Germany"	88	80	81	109	131	102	90	90	125	186	89	91	98	165	113	92	129	120	127	120	291	2417	
+"Russian Federation"			137	146			135	137	5000	137		137		137	137	263	137		137	164	266	1624	
+"Belgium"	139	120	89	94	128	231	154	106	183	83	294	679		692	190	121	132	130	95	119	247	2073	
+"Poland"	460		350	108		100	598	798	729		887	732	729		92	324		677	640	696	229	329	
+"Korea, Republic of"	212		125	113	116	124		120	116		337		134	157	244	140	134	149	194	210	217	1034	
+"Spain"		759	111		205	59	532	223	2727	197	3450	298	1012	325	193	92	74	511	206	148	140	944	
+"Kazakhstan"				195												500				238	125	526	
+"Australia"	133	140	119	128	117	108	115	127	154	167	155	152	143	178	333		115	3161	363	152	121	796	
+"Italy"	244	137	141	178	243	708	334	468	148	249	295	256	107	301	378	116	322	516	105	306	110	359	
+"United Arab Emirates"	163	163	156	201	233	247	233	242	247	177	227	179	201	136		147		196	122	187	104	555	
+"United States of America"		122		72	96	72	99	67	115	77	791	79	138	84	107	848	141	145	135	187	101	539	
+"Portugal"		109	107	760	756			152	109					134		122	111	70	122	121	88	730	
+"Bangladesh"											169		1000	138						145	57	393	
+"India"	592	750	870		886		976	850	833	973	818	5000		1306		800	1143		2000	1041	51	49	
+"Uruguay"						110	108			110										121	51	423	
+"Sweden"	148	128	106	93	228	104	162	198	156	235	253	130	177	191	117	109	101	123	111	112	51	456	
+"Israel"	173	923			1097	91	755	88		833		583	895				156	141	108	839	47	56	
+"Jordan"	209		137	111	138	137		714		116	144		133			135	152		178	156	43	276	
+"Uzbekistan"					159															142	40	282	
+"Estonia"																				679	38	56	
+"Ghana"									260					194						96	33	345	
+"Denmark"	362	522	723	156	520	339	573	441	97	152	767	661	821	769	796	885	603	925	821	769	30	39	
+"Switzerland"		585	167		633		218	82		97	591	718		194		818	169	692		744	29	39	
+"Tunisia"										184						133	133	181	181	181	26	144	
+"Romania"															148	148	145	159		179	26	145	
+"Norway"					138	166	177			104	236	167		105	113					105	24	228	
+"New Zealand"					258	833	780			396	800	260		175				204	198	141	23	163	
+"Czech Republic"	125		4000	101	108		147		622										105	97	23	238	
+"Ukraine"												5000							154	150	22	147	
+"Iran, Islamic Republic of"			136		145	136	138	500	136		233	100	187						128	128	21	164	
+"Indonesia"	768			909			867	129	183	768		840		1085		150		200		160	16	100	
+"Senegal"									137						154					152	14	92	
+"Hong Kong, China"			2000		2500		667		1000	2000	180	1000			2333		500	6000	5000	3000	12	4	
+"Finland"			83	641	111	129	381	714	644	680	240	600			778			714	857	769	10	13	
+"Turkmenistan"								472	400				364				667	667		467	7	15	
+"Egypt"									160		100		301				4000			5000	5	1	
+"Singapore"	731	1000	450	156	99	164	143	500	246	100	1833		3000		1348	250	1500	3000		1000	2	2	
+"Philippines"	122	135	200	135	164		130	182	2282	2333		140			149				186	1000	1	1	
+"Chile"								647	375	650	1000	160								200	1	5	
+"Korea, Democratic People's Republic of"			167	124	167	100	333	200			167	205						500	153	1000	1	1	
+"Côte d'Ivoire"	164			270				164		212			247								0		
+"Kenya"														500							0		
+"Niger"																	1000				0		
+"Netherlands Antilles"		83												103							0		
+"Pakistan"						233	818					242									0		
+"Panama"						92	92				133	167									0		
+"Papua New Guinea"									400												0		
+"Paraguay"												1333									0		
+"Peru"															1000						0		
+"Kuwait"							247	260				256	260	253							0		
+"Kyrgyzstan"																		296	429		0		
+"Lao People's Democratic Republic"		187	175			175	192		175												0		
+"Lebanon"		184		219				800		418			147	129		118					0		
+"Latvia"	684	643			1167	80	667	1250	683	689											0		
+"Libya, State of"							187		187												0		
+"Luxembourg"																					0		
+"Macao, China"		500																			0		
+"Madagascar"		233																			0		
+"Malaysia"		500	471		156	429		182	163		1261	172				260	500				0		
+"Malta"				260														150	78		0		
+"Mauritius"									147						4000						0		
+"Mexico"								4000							4000						0		
+"Taipei, Chinese"					1813		1813	1813		1906	1813	1792			1750	214					0		
+"Mongolia"				182	3000																0		
+"Moldova, Republic of"																		3000			0		
+"Morocco"						233		103							118						0		
+"Oman"		271			271				271					281							0		
+"Namibia"									185												0		
+"Congo"															2000						0		
+"Croatia"													93				5000				0		
+"Austria"		385	68			1000			84		500										0		
+"Bahrain"	233			233	233		253														0		
+"Algeria"											333		122	167	152		152		101		0		
+"Angola"								117				138		245	400			146	606		0		
+"Bolivia, Plurinational State of"				500																	0		
+"Bosnia and Herzegovina"														197							0		
+"Brazil"			472																		0		
+"Brunei Darussalam"									196		260										0		
+"Bulgaria"	578			688		480	596				561					568			115		0		
+"Myanmar"										148	160	142	158	151	160				4000		0		
+"Canada"			4000							92											0		
+"Sri Lanka"																	1000				0		
+"Iraq"						109															0		
+"Ireland"					1250		971					54				174	500	68	56		0		
+"Hungary"							109				108		119		119						0		
+"Iceland"								90													0		
+"Djibouti"				233																	0		
+"Gabon"												247							1000		0		
+"Ethiopia"						154						500									0		
+"Fiji"			1000																		0		
+"Greece"						84		567		92	86										0		
+"Guatemala"													110								0		
+"Guinea"																		137	145		0		
+"Guyana"											100										0		
+"Saint Vincent and the Grenadines"									179												0		
+"Saudi Arabia"					164	193	193	173		240	253			192							0		
+"Guinea-Bissau"		333																9000			0		
+"Qatar"						247		247			247										0		
+"Viet Nam"					393						1000								1000		0		
+"Slovenia"	148																	135			0		
+"South Africa"	10000	84			85					85											0		
+"Serbia"																	1000				0		
+"Sudan (before 2012)"													500						1000		0		
+"Uganda"												2000									0		
+"Turkey"																	100				0	0	
+"Tajikistan"				147																	0		
+"Thailand"																					0		
+"Venezuela, Bolivarian Republic of"															351						0		
+"Yemen"									156												0		
+"Zambia"																	500				0		
+"Area Nes"																					0	0	

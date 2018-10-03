@@ -1,0 +1,34 @@
+﻿Exporters	2002-M09-Imported unit value, US Dollar/Kilograms	2002-M10-Imported unit value, US Dollar/Kilograms	2002-M11-Imported unit value, US Dollar/Kilograms	2002-M12-Imported unit value, US Dollar/Kilograms	2003-M01-Imported unit value, US Dollar/Kilograms	2003-M02-Imported unit value, US Dollar/Kilograms	2003-M03-Imported unit value, US Dollar/Kilograms	2003-M04-Imported unit value, US Dollar/Kilograms	2003-M05-Imported unit value, US Dollar/Kilograms	2003-M06-Imported unit value, US Dollar/Kilograms	2003-M07-Imported unit value, US Dollar/Kilograms	2003-M08-Imported unit value, US Dollar/Kilograms	2003-M09-Imported unit value, US Dollar/Kilograms	2003-M10-Imported unit value, US Dollar/Kilograms	2003-M11-Imported unit value, US Dollar/Kilograms	2003-M12-Imported unit value, US Dollar/Kilograms	2004-M01-Imported unit value	2004-M01-Unit	2004-M02-Imported unit value	2004-M02-Unit	2004-M03-Imported unit value	2004-M03-Unit	2004-M04-Imported unit value	2004-M04-Unit	Imported value in 2004-M04, US Dollar thousand	Imported quantity in 2004-M04	Quantity Unit in 2004-M04	
+"Italy"																	9083	US Dollar/Tons	8950	US Dollar/Tons	8994	US Dollar/Tons	8615	US Dollar/Tons	7538	875	Tons	
+"Germany"																	9124	US Dollar/Tons	10482	US Dollar/Tons	17364	US Dollar/Tons	9744	US Dollar/Tons	2631	270	Tons	
+"Portugal"																	6591	US Dollar/Tons	6906	US Dollar/Tons	6581	US Dollar/Tons	6891	US Dollar/Tons	1199	174	Tons	
+"Finland"																	7379	US Dollar/Tons	7738	US Dollar/Tons	11462	US Dollar/Tons	8779	US Dollar/Tons	992	113	Tons	
+"Denmark"																	9786	US Dollar/Tons	15561	US Dollar/Tons	10938	US Dollar/Tons	10411	US Dollar/Tons	989	95	Tons	
+"Spain"																	7708	US Dollar/Tons	9639	US Dollar/Tons	4857	US Dollar/Tons	7847	US Dollar/Tons	926	118	Tons	
+"Sweden"																	9574	US Dollar/Tons	9320	US Dollar/Tons	8116	US Dollar/Tons	43000	US Dollar/Tons	731	17	Tons	
+"France"																	10520	US Dollar/Tons	8875	US Dollar/Tons	8033	US Dollar/Tons	8145	US Dollar/Tons	448	55	Tons	
+"Turkey"	2.96	3.99	3.72	2.72	3.22	3.43	2.73	4.24	4.35	3.94	4.74	3.14	3.91	3.39	2.84	4.10	5.04	US Dollar/Kilograms	5.45	US Dollar/Kilograms	3.63	US Dollar/Kilograms	4.12	US Dollar/Kilograms	347	84300	Kilograms	
+"Austria"																	8125	US Dollar/Tons	7171	US Dollar/Tons	6306	US Dollar/Tons	6553	US Dollar/Tons	308	47	Tons	
+"Netherlands"																	10037	US Dollar/Tons	11182	US Dollar/Tons	25000	US Dollar/Tons	20267	US Dollar/Tons	304	15	Tons	
+"Slovenia"																	7086	US Dollar/Tons	7172	US Dollar/Tons	7449	US Dollar/Tons	6976	US Dollar/Tons	293	42	Tons	
+"Hungary"																	5000	US Dollar/Tons	8364	US Dollar/Tons	8795	US Dollar/Tons	13167	US Dollar/Tons	237	18	Tons	
+"Greece"																	7308	US Dollar/Tons	7794	US Dollar/Tons	8243	US Dollar/Tons	7107	US Dollar/Tons	199	28	Tons	
+"Ireland"																	10400	US Dollar/Tons	8633	US Dollar/Tons	7621	US Dollar/Tons	11000	US Dollar/Tons	187	17	Tons	
+"Slovakia"																	7786	US Dollar/Tons	6038	US Dollar/Tons	6909	US Dollar/Tons	7588	US Dollar/Tons	129	17	Tons	
+"Poland"																	5714	US Dollar/Tons	6125	US Dollar/Tons	6727	US Dollar/Tons	5143	US Dollar/Tons	108	21	Tons	
+"Czech Republic"																	5000	US Dollar/Tons	8667	US Dollar/Tons	7667	US Dollar/Tons	4250	US Dollar/Tons	34	8	Tons	
+"Belgium"																		US Dollar/Tons		US Dollar/Tons	11500	US Dollar/Tons	6000	US Dollar/Tons	18	3	Tons	
+"Iceland"																					52	US Dollar/Kilograms	52	US Dollar/Kilograms	18	346	Kilograms	
+"Luxembourg"																		US Dollar/Tons	17000	US Dollar/Tons		US Dollar/Tons	13000	US Dollar/Tons	13	1	Tons	
+"Bulgaria"																							2000	US Dollar/Tons	4	2	Tons	
+"Australia"																									0	0		
+"Morocco"																									0	0		
+"Romania"																			3714	US Dollar/Tons				US Dollar/Tons	0	0	Tons	
+"Taipei, Chinese"								7.27																				
+"Trinidad and Tobago"																												
+"Uganda"																												
+"Mayotte"																												
+"Brazil"																												
+"Japan"						10																						
+"Kazakhstan"																												
+"Ghana"																												
