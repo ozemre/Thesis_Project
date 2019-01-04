@@ -188,3 +188,75 @@ def experiment_RandomForest(repeats,
     
     return error_rmse, error_R2
 
+
+# In[ ]:
+
+
+from sklearn.neural_network import MLPRegressor
+
+
+# In[ ]:
+
+
+def NeuralNetwork(X_train, X_test, y_train, y_test,scaler_y,
+                  rand=50,is_random_fixed='TRUE',
+                  activ='relu', alph=0.0001, slv='adam', max_iteration=200,  hidden_layer=(30,30)):
+    
+    
+    if is_random_fixed == 'TRUE': 
+        rs=rand
+    else :
+        rs=random.randint(1,100)
+    print('neuralnetwork rs=',rs)   
+
+    MLP = MLPRegressor(
+                            activation=activ,
+                            random_state =rs,                      
+                            alpha = alph,
+                            solver=slv ,
+                            max_iter=max_iteration,  
+                            hidden_layer_sizes=hidden_layer
+                        )
+
+
+    MLPRegressor.fit(MLP,X_train,y_train)
+    
+    y_predict_test = MLP.predict(X_test)
+    y_predict_train = MLP.predict(X_train)
+    
+    result_test=inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,'NO')
+    result_train=inverse_scale_and_graph_Y_predict_and_test(y_predict_train,y_train,scaler_y,'NO')
+   
+    return result_test, result_train
+
+
+# In[ ]:
+
+
+def experiment_NN(repeats,
+                  X_train, X_test, y_train, y_test,scaler_y,
+                  rand=50,is_random_fixed='TRUE',
+                  activ='relu',alph=0.0001, max_iteration=200, slv='adam',  hidden_layer=(30,30)):
+
+
+    error_rmse = list()
+    error_R2 = list()
+    
+    for r in range(repeats):
+            
+        result = NeuralNetwork(X_train, X_test, y_train, y_test,scaler_y,
+                               rand=rand,is_random_fixed=is_random_fixed,
+                               activ=activ,alph=alph,max_iteration=max_iteration, slv=slv, hidden_layer=hidden_layer)
+        
+        
+        rmse_test=result[0][1]
+        R2_test=result[0][2]
+        
+        rmse_train=result[1][0]
+        R2_train=result[1][1]
+        
+        error_rmse.append(rmse_test)
+        error_R2.append(R2_test)
+    
+    return error_rmse, error_R2
+
