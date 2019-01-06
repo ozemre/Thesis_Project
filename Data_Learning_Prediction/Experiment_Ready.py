@@ -109,7 +109,7 @@ def randomforest(X_train, X_test, y_train, y_test,scaler_y,rand=50,is_random_fix
         rs=rand
     else :
         rs=random.randint(1,100)
-    print('randomforest rs=',rs)
+    #print('randomforest rs=',rs)
     rfc=RandomForestRegressor(n_estimators=est,
                               min_samples_leaf=min_leaf,
                               random_state =rs,
@@ -207,7 +207,7 @@ def NeuralNetwork(X_train, X_test, y_train, y_test,scaler_y,
         rs=rand
     else :
         rs=random.randint(1,100)
-    print('neuralnetwork rs=',rs)   
+    #print('neuralnetwork rs=',rs)   
 
     MLP = MLPRegressor(
                             activation=activ,
