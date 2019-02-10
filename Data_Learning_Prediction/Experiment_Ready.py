@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[ ]:
+# In[16]:
 
 
 import numpy as np
@@ -12,14 +12,14 @@ from scipy.stats.stats import pearsonr
 from sklearn.model_selection import train_test_split
 
 
-# In[ ]:
+# In[17]:
 
 
 import os
 import sys
 
 
-# In[ ]:
+# In[18]:
 
 
 from sklearn import metrics
@@ -35,7 +35,7 @@ from random import seed
 datetime.now().strftime('%m-%d %H:%M')
 
 
-# In[ ]:
+# In[19]:
 
 
 from sklearn.preprocessing import MinMaxScaler
@@ -46,7 +46,7 @@ from sklearn.preprocessing import RobustScaler
 from sklearn.preprocessing import Normalizer
 
 
-# In[ ]:
+# In[20]:
 
 
 def Xscaler(X,y,scalertype):
@@ -67,7 +67,7 @@ def Xscaler(X,y,scalertype):
     return X
 
 
-# In[ ]:
+# In[21]:
 
 
 def X_Y_scaler_train_test_Split(X,y,Z,random=42):
@@ -96,7 +96,7 @@ def X_Y_scaler_train_test_Split(X,y,Z,random=42):
     return X_train, X_test, y_train, y_test, scaler_X, scaler_y, scaled_value_X, scaled_value_y
 
 
-# In[ ]:
+# In[22]:
 
 
 # For Random Forest with variable tuning 
@@ -109,7 +109,7 @@ def randomforest(X_train, X_test, y_train, y_test,scaler_y,rand=50,is_random_fix
         rs=rand
     else :
         rs=random.randint(1,100)
-    #print('randomforest rs=',rs)
+    print('randomforest rs=',rs)
     rfc=RandomForestRegressor(n_estimators=est,
                               min_samples_leaf=min_leaf,
                               random_state =rs,
@@ -127,11 +127,13 @@ def randomforest(X_train, X_test, y_train, y_test,scaler_y,rand=50,is_random_fix
     result_test=inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,'NO')
     result_train=inverse_scale_and_graph_Y_predict_and_test(y_predict_train,y_train,scaler_y,'NO')
     
+    
+  
     return result_test, result_train
 
 
 
-# In[ ]:
+# In[23]:
 
 
 def inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,plot_on):
@@ -157,7 +159,7 @@ def inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,pl
     return MAE,MSE,R2
 
 
-# In[ ]:
+# In[24]:
 
 
 def experiment_RandomForest(repeats,
@@ -189,13 +191,13 @@ def experiment_RandomForest(repeats,
     return error_rmse, error_R2
 
 
-# In[ ]:
+# In[25]:
 
 
 from sklearn.neural_network import MLPRegressor
 
 
-# In[ ]:
+# In[26]:
 
 
 def NeuralNetwork(X_train, X_test, y_train, y_test,scaler_y,
@@ -207,7 +209,7 @@ def NeuralNetwork(X_train, X_test, y_train, y_test,scaler_y,
         rs=rand
     else :
         rs=random.randint(1,100)
-    #print('neuralnetwork rs=',rs)   
+    print('neuralnetwork rs=',rs)   
 
     MLP = MLPRegressor(
                             activation=activ,
@@ -230,7 +232,7 @@ def NeuralNetwork(X_train, X_test, y_train, y_test,scaler_y,
     return result_test, result_train
 
 
-# In[ ]:
+# In[27]:
 
 
 def experiment_NN(repeats,
@@ -260,3 +262,96 @@ def experiment_NN(repeats,
     
     return error_rmse, error_R2
 
+
+# # Functions for Feature Selection for Ver#3 End
+
+# In[28]:
+
+
+# Function #1 for #3 Version for Train Test Split and Feature selection 
+# Calculates Importances and R2 scores  only for each iteration
+def get_feature_importance_and_R2 (X,y,Z,n_feature,split=5):
+    from collections import defaultdict
+    
+    rf = RandomForestRegressor()
+    number_of_split=split
+    random_state_options=np.random.randint(1,100,size=number_of_split)
+
+    feature_indices = np.ones((n_feature, number_of_split))
+    feature_importances=np.ones((n_feature, number_of_split))
+
+    scores = defaultdict(list)
+    feature_std = np.ones((n_feature, number_of_split))
+    feature_score=np.zeros((n_feature))
+
+    R2=np.ones(number_of_split)
+
+    for turn in range(number_of_split):
+        random=random_state_options[turn]
+    
+        X_train, X_test, Y_train, Y_test = train_test_split(X,y,test_size=0.2,random_state=random,stratify=Z['Month'])
+
+        RandomForestRegressor.fit(rf,X_train, Y_train)    
+   
+        flatten=rf.predict(X_test).flatten()
+        R2[turn]=int(1000*pearsonr(Y_test,flatten )[0]**2)/1000
+ 
+        importances = rf.feature_importances_
+        indices = np.argsort(importances)[::-1]
+
+        feature_importances[:,turn]=importances
+        feature_indices[:,turn]=indices
+
+    return R2,feature_importances,feature_indices
+
+
+# In[29]:
+
+
+# Function #2 for #3 Version for Train Test Split and Feature selection 
+# For each Iteration combinesimportances and R2 scores get 1 end result
+def combine_feature_importance_and_R2 (score_coefficient,feature_importances,n_feature,number_of_split):
+    feature_score=np.zeros((n_feature))
+    for i in range(n_feature):
+        feature_score[i]=0
+    
+        for j in range(number_of_split):
+                
+            importances_coeff=int((feature_importances[i,j]*10000))/10000
+        
+            score_coeff=int((score_coefficient[j]+1)*10)/10
+
+            score=score_coeff*(importances_coeff)
+
+            feature_score[i]=feature_score[i]+score
+    
+    scored_feature_indices = (np.argsort(feature_score)[::-1])
+
+    return scored_feature_indices,feature_score
+    
+
+
+# In[30]:
+
+
+# Function #3 for #3 Version for Train Test Split and Feature selection 
+# This Function first calls Function #1 and then Function #2 
+def get_feature_importance_result (X,y,Z,n_feature,number_of_split):
+    
+    result=get_feature_importance_and_R2 (X,y,Z,n_feature,number_of_split)
+    R2=result[0]
+    feature_importances=result[1]
+    feature_indices=result[2]
+
+    R2_Adj=1-R2
+    score_coefficient=n_feature*(R2_Adj - np.max(R2_Adj))/-np.ptp(R2_Adj)
+
+    result=combine_feature_importance_and_R2(score_coefficient,feature_importances,n_feature,number_of_split)
+    scored_feature_indices=result[0]
+    feature_score=result[1]/number_of_split
+
+    return scored_feature_indices,feature_score
+
+
+# # Functions for Feature Selection for Ver#3 Start
+# 3 Different Functions
