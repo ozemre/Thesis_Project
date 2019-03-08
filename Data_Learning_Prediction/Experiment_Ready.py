@@ -26,6 +26,8 @@ from sklearn import metrics
 import statsmodels
 from math import sqrt
 from math import log
+from math import exp
+
 from sklearn.ensemble import RandomForestRegressor
 from datetime import datetime
 
@@ -101,7 +103,10 @@ def X_Y_scaler_train_test_Split(X,y,Z,random=42):
 
 # For Random Forest with variable tuning 
 
-def randomforest(X_train, X_test, y_train, y_test,scaler_y,rand=50,is_random_fixed='TRUE',est=10,min_leaf=1,feat='auto',max_leaf=None,min_weight=0.0,min_impurity=1e-07):
+def randomforest(X_train, X_test, y_train, y_test,scaler_y,
+                 rand=50,is_random_fixed='TRUE',dependenttype='same',
+                 est=10,min_leaf=1,feat='auto',max_leaf=None,min_weight=0.0,min_impurity=1e-07):
+    
     from sklearn.model_selection import cross_val_score   
     from sklearn.model_selection import cross_val_predict
     
@@ -124,8 +129,8 @@ def randomforest(X_train, X_test, y_train, y_test,scaler_y,rand=50,is_random_fix
     y_predict_test = rfc.predict(X_test)
     y_predict_train = rfc.predict(X_train)
     
-    result_test=inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,'NO')
-    result_train=inverse_scale_and_graph_Y_predict_and_test(y_predict_train,y_train,scaler_y,'NO')
+    result_test=inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,'NO',dependenttype)
+    result_train=inverse_scale_and_graph_Y_predict_and_test(y_predict_train,y_train,scaler_y,'NO',dependenttype)
     
     
   
@@ -133,30 +138,41 @@ def randomforest(X_train, X_test, y_train, y_test,scaler_y,rand=50,is_random_fix
 
 
 
-# In[23]:
+# In[1]:
 
 
-def inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,plot_on):
+def inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,plot_on,dependenttype):
 
     y_predict_test=y_predict_test.reshape(-1, 1)
-    inv_y_predict_test = scaler_y.inverse_transform(y_predict_test)
-    predictions=inv_y_predict_test
-
+    predictions = scaler_y.inverse_transform(y_predict_test)
+    inv_y_predict_test=predictions.flatten()
   
+
     inv_y_test = scaler_y.inverse_transform(y_test)
     inv_y_test = inv_y_test[:,0]
 
-    MAE=int(metrics.mean_absolute_error(inv_y_test, predictions))
-    MSE=int(sqrt(metrics.mean_squared_error(inv_y_test, predictions)))
-    flatten=predictions.flatten()
-    R2=int(1000*pearsonr(inv_y_test,flatten )[0]**2)/1000
+    MAE=int(metrics.mean_absolute_error(inv_y_test, inv_y_predict_test))
+    MSE=int(sqrt(metrics.mean_squared_error(inv_y_test, inv_y_predict_test)))
+    
+    R2=int(1000*pearsonr(inv_y_test,inv_y_predict_test )[0]**2)/1000
 #    R2=int(1000*(metrics.r2_score(inv_y_test, predictions)))/1000
     
+    if dependenttype=='same':
+        con_y_test=inv_y_test
+        con_y_predict_test=inv_y_predict_test
+    elif dependenttype=='log':
+        con_y_test=[exp(num) for num in inv_y_test]
+        con_y_predict_test=[exp(num) for num in inv_y_predict_test]
+    elif dependenttype=='sqrt':
+        con_y_test=[num**2 for num in inv_y_test]
+        con_y_predict_test=[num**2 for num in inv_y_predict_test]
+    
+    con_R2=int(1000*pearsonr(con_y_test,con_y_predict_test )[0]**2)/1000
     
     if plot_on =='YES':
-        plt.scatter(inv_y_test,predictions)
+        plt.scatter(con_y_test,con_y_predict_test)
     
-    return MAE,MSE,R2
+    return MAE,MSE,con_R2,R2,con_y_test,con_y_predict_test
 
 
 # In[24]:
@@ -164,7 +180,7 @@ def inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,pl
 
 def experiment_RandomForest(repeats,
                   X_train, X_test, y_train, y_test,scaler_y,
-                  rand=50,is_random_fixed='TRUE',
+                  rand=50,is_random_fixed='TRUE',dependenttype='same',
                   est=10,min_leaf=1,feat='auto',max_leaf=None,min_weight=0.0,min_impurity=1e-07):
     
     error_rmse = list()
@@ -173,7 +189,7 @@ def experiment_RandomForest(repeats,
     for r in range(repeats):
 
         result=randomforest(X_train, X_test, y_train, y_test,scaler_y,
-                            rand=rand,is_random_fixed=is_random_fixed,
+                            rand=rand,is_random_fixed=is_random_fixed,dependenttype=dependenttype,
                             est=est,min_leaf=min_leaf,feat=feat,max_leaf=max_leaf,
                             min_weight=min_weight,min_impurity=min_impurity)
 
@@ -201,7 +217,7 @@ from sklearn.neural_network import MLPRegressor
 
 
 def NeuralNetwork(X_train, X_test, y_train, y_test,scaler_y,
-                  rand=50,is_random_fixed='TRUE',
+                  rand=50,is_random_fixed='TRUE',dependenttype='same',
                   activ='relu', alph=0.0001, slv='adam', max_iteration=200,  hidden_layer=(30,30)):
     
     
@@ -226,8 +242,8 @@ def NeuralNetwork(X_train, X_test, y_train, y_test,scaler_y,
     y_predict_test = MLP.predict(X_test)
     y_predict_train = MLP.predict(X_train)
     
-    result_test=inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,'NO')
-    result_train=inverse_scale_and_graph_Y_predict_and_test(y_predict_train,y_train,scaler_y,'NO')
+    result_test=inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,'NO',dependenttype)
+    result_train=inverse_scale_and_graph_Y_predict_and_test(y_predict_train,y_train,scaler_y,'NO',dependenttype)
    
     return result_test, result_train
 
@@ -237,7 +253,7 @@ def NeuralNetwork(X_train, X_test, y_train, y_test,scaler_y,
 
 def experiment_NN(repeats,
                   X_train, X_test, y_train, y_test,scaler_y,
-                  rand=50,is_random_fixed='TRUE',
+                  rand=50,is_random_fixed='TRUE',dependenttype='same',
                   activ='relu',alph=0.0001, max_iteration=200, slv='adam',  hidden_layer=(30,30)):
 
 
@@ -247,7 +263,7 @@ def experiment_NN(repeats,
     for r in range(repeats):
             
         result = NeuralNetwork(X_train, X_test, y_train, y_test,scaler_y,
-                               rand=rand,is_random_fixed=is_random_fixed,
+                               rand=rand,is_random_fixed=is_random_fixed,dependenttype=dependenttype,
                                activ=activ,alph=alph,max_iteration=max_iteration, slv=slv, hidden_layer=hidden_layer)
         
         
@@ -355,3 +371,30 @@ def get_feature_importance_result (X,y,Z,n_feature,number_of_split):
 
 # # Functions for Feature Selection for Ver#3 Start
 # 3 Different Functions
+
+# In[ ]:
+
+
+def format_func(value, tick_number):
+    # find number of multiples of pi/2
+    N = tick_number # int(np.round(2 * value / np.pi))
+    
+    if N == 1:
+        return "200604"
+    elif N == 2:
+        return "200712"
+    elif N == 3:
+        return "200908"
+    elif N ==4: 
+        return "201104"
+    elif N == 5:
+        return "201212"
+    elif N == 6:
+        return "201408"
+    elif N == 7: 
+        return "201604"
+    elif N == 8: 
+        return "201712"
+    else:
+        return ""
+
