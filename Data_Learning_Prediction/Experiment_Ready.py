@@ -154,7 +154,7 @@ def inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,pl
     MAE=int(metrics.mean_absolute_error(inv_y_test, inv_y_predict_test))
     MSE=int(sqrt(metrics.mean_squared_error(inv_y_test, inv_y_predict_test)))
     
-    R2=int(1000*pearsonr(inv_y_test,inv_y_predict_test )[0]**2)/1000
+    trained_orginal_R2=int(1000*pearsonr(inv_y_test,inv_y_predict_test )[0]**2)/1000
 #    R2=int(1000*(metrics.r2_score(inv_y_test, predictions)))/1000
     
     if dependenttype=='same':
@@ -167,12 +167,12 @@ def inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,pl
         con_y_test=[num**2 for num in inv_y_test]
         con_y_predict_test=[num**2 for num in inv_y_predict_test]
     
-    con_R2=int(1000*pearsonr(con_y_test,con_y_predict_test )[0]**2)/1000
+    converted_R2=int(1000*pearsonr(con_y_test,con_y_predict_test )[0]**2)/1000
     
     if plot_on =='YES':
         plt.scatter(con_y_test,con_y_predict_test)
     
-    return MAE,MSE,con_R2,R2,con_y_test,con_y_predict_test
+    return MAE,MSE,converted_R2,trained_orginal_R2,con_y_test,con_y_predict_test
 
 
 # In[24]:
@@ -183,8 +183,8 @@ def experiment_RandomForest(repeats,
                   rand=50,is_random_fixed='TRUE',dependenttype='same',
                   est=10,min_leaf=1,feat='auto',max_leaf=None,min_weight=0.0,min_impurity=1e-07):
     
-    error_rmse = list()
-    error_R2 = list()
+    error_R2_original = list()
+    error_R2_converted = list()
     
     for r in range(repeats):
 
@@ -193,18 +193,16 @@ def experiment_RandomForest(repeats,
                             est=est,min_leaf=min_leaf,feat=feat,max_leaf=max_leaf,
                             min_weight=min_weight,min_impurity=min_impurity)
 
-    
+#        rmse_train=result[1][0]
+#        R2_train=result[1][1]
       
-        rmse_test=result[0][1]
-        R2_test=result[0][2]
+        R2_test_org=result[0][3]
+        R2_test_con=result[0][2]
         
-        rmse_train=result[1][0]
-        R2_train=result[1][1]
-        
-        error_rmse.append(rmse_test)
-        error_R2.append(R2_test)
+        error_R2_original.append(R2_test_org)
+        error_R2_converted.append(R2_test_con)
     
-    return error_rmse, error_R2
+    return error_R2_original, error_R2_converted
 
 
 # In[25]:
@@ -257,8 +255,8 @@ def experiment_NN(repeats,
                   activ='relu',alph=0.0001, max_iteration=200, slv='adam',  hidden_layer=(30,30)):
 
 
-    error_rmse = list()
-    error_R2 = list()
+    error_R2_original = list()
+    error_R2_converted = list()
     
     for r in range(repeats):
             
@@ -267,16 +265,16 @@ def experiment_NN(repeats,
                                activ=activ,alph=alph,max_iteration=max_iteration, slv=slv, hidden_layer=hidden_layer)
         
         
-        rmse_test=result[0][1]
-        R2_test=result[0][2]
+#        rmse_train=result[1][0]
+#        R2_train=result[1][1]
+      
+        R2_test_org=result[0][3]
+        R2_test_con=result[0][2]
         
-        rmse_train=result[1][0]
-        R2_train=result[1][1]
-        
-        error_rmse.append(rmse_test)
-        error_R2.append(R2_test)
+        error_R2_original.append(R2_test_org)
+        error_R2_converted.append(R2_test_con)
     
-    return error_rmse, error_R2
+    return error_R2_original, error_R2_converted
 
 
 # # Functions for Feature Selection for Ver#3 End
