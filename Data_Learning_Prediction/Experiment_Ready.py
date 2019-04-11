@@ -23,7 +23,7 @@ import sys
 
 
 from sklearn import metrics
-import statsmodels
+#import statsmodels
 from math import sqrt
 from math import log
 from math import exp
