@@ -131,7 +131,7 @@ def randomforest(X_train, X_test, y_train, y_test,scaler_y,
     
     result_test=inverse_scale_and_graph_Y_predict_and_test(y_predict_test,y_test,scaler_y,'NO',dependenttype)
     result_train=inverse_scale_and_graph_Y_predict_and_test(y_predict_train,y_train,scaler_y,'NO',dependenttype)
-    
+    print('R2_Test',result_test[2],'R2_Train',result_train[2] )
     
   
     return result_test, result_train
